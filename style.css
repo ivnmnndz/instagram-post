@@ -1,9 +1,7 @@
 * {
-    /* border: 1px dotted red;
-    margin: 1px;
-    padding: 1px; */
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: 300;
 }
 
 body {
@@ -11,9 +9,12 @@ body {
     margin: 0;
 }
 
+.bold {
+    font-weight: 500;
+}
+
 .container {
-    margin: 75px 0;
-    /* padding: 40px; */
+    margin: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,28 +23,39 @@ body {
 .post {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    height: 650px;
-    width: 400px;
+    height: 600px;
+    width: 420px;
     background: white;
 }
 
 .post-header {
-    padding: 10px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.icon-list{
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
 }
-i.fa-bookmark{
-    align-self: flex-end;
+.header-left{
+    display: flex;
+    flex-direction: row;
+}
+.post-icon {
+    margin-right: 5px;
+}
+.title-column {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.body-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .post-body {
-    padding: 10px 10px 40px 10px;
+    padding: 10px 10px 30px 10px;
 }
